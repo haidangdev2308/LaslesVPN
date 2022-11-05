@@ -4,8 +4,8 @@ $('.customer-list').slick({
     slidesToScroll: 1,
     dots: true,
     // autoplay: true,
-    prevArrow:`<button type='button' class='slick-prev pull-left'><img src="/assets/img/arrow-back.png"></button>`,
-    nextArrow:`<button type='button' class='slick-next pull-right'><img src="/assets/img/arrow-next.png"></button>`,
+    prevArrow:`<button type='button' class='slick-prev pull-left'><img src="./assets/img/arrow-back.png"></button>`,
+    nextArrow:`<button type='button' class='slick-next pull-right'><img src="./assets/img/arrow-next.png"></button>`,
 
     responsive: [
       {
