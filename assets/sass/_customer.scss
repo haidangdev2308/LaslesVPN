@@ -1,0 +1,181 @@
+.customer {
+    position: relative;
+    &-container {
+        padding-top: 50px;
+        
+    }
+
+    &-list {
+        display: flex;
+        // align-items: stretch;
+    }
+
+    &-heading {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        max-width: 448px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 22px;
+    }
+
+    &-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        max-width: 555px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    &-item {
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        padding: 30px ;
+        width: 400px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+
+
+        &.slick-current.slick-active {
+            border-color: $primary-color;
+            box-shadow: 0 46px 114px rgba($color: #0D1025, $alpha: 0.06);
+        }
+
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &-info {
+                display: flex;
+                align-items: center;
+            }
+
+            &-wrap {
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+            }
+
+            &-name {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            &-country {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &-rating {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .quantity {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__comment {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $heading-color;
+            flex: 1;
+            flex-shrink: 0;
+            display:-webkit-box;
+            -webkit-line-clamp:5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
+    .slick-track {
+        display: flex;
+        gap: 0 50px;
+        margin-left: -30px;
+        margin-bottom: 60px;
+
+    }
+
+    .slick-prev, .slick-next {
+        width: 60px;
+        height: 60px;
+        border-radius: 100rem;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translateY(50%);
+        box-shadow: rgba(247, 72, 28, 0.2) 0px 0px 24px;
+        transition: all 0.1s linear;
+    }
+
+    .slick-prev:active, .slick-next:active {
+        
+        box-shadow: rgba(247, 72, 28, 0.9) 0px 8px 50px;
+    }
+    
+    .slick-prev {
+        border: 1px solid $primary-color;
+        background-color: #fff;
+        bottom: 0;
+        right: 80px;
+    }
+
+    .slick-next {
+        background-color: $primary-color;
+        color: #fff;
+        bottom: 0;
+        right: 0;
+    }
+
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 0 15px;
+        
+        button {
+            background-color: #DDE0E4; 
+            font-size: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 100rem;
+            border: none;
+            transition: all 0.2s linear;
+        }
+
+        .slick-active button {
+            background-color: $primary-color;
+            width: 45px;
+            
+        }       
+    }
+    
+    .slick-slide {
+        height: 280px;
+    }
+
+}
+
+@media screen and (max-width: 1023.98px) {
+    .slick-dots {
+        justify-content: center;
+    }
+}
+
+
+
+

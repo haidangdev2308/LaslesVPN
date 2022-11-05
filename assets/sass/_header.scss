@@ -1,0 +1,49 @@
+.header {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-auth {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        text-transform: capitalize;
+
+        .sign-in {
+            font-weight: 500;
+            color: $heading-color;
+        }
+
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 0 40px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $text-color;
+    &-link {
+        color: inherit;
+        &:hover {
+            color: $heading-color;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .menu {
+        display: none;
+    }
+
+    .header {
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+}
+
+
